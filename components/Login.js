@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
+import profilePic from '../public/images/pic.png'
 
 function Login() {
     const { authenticate } = useMoralis();
@@ -11,7 +12,7 @@ function Login() {
                
                 <Image
                     className="object-cover rounded-full" 
-                    src="https://links.papareact.com/3pi"
+                    src={profilePic}
                     height={200}
                     width={200}
                 />
